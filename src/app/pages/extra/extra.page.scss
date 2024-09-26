@@ -18,6 +18,22 @@
 #back:hover{
   background-color: #9171ff;
 }
+#head2{
+  --background: #ffd6f5; /* Ensure the background is set */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds the shadow */
+}
+#closeMenu{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 100px;
+  margin-left:  100px;
+  --background: #ff00b9;
+  --border-radius: 5px;
+  --color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 ion-buttons:active {
   --background: transparent;
   --color: #000000;
@@ -54,13 +70,13 @@ html, body {
   overflow: hidden;
 }
 
-ion-header {
+ion-header #head{
   background-color: #ffd6f5;
   --ion-box-shadow: none;
   --border-width: 0;
 }
 
-ion-header, ion-toolbar {
+ #head, ion-toolbar {
   --ion-box-shadow: none !important;
   --box-shadow: none !important;
   box-shadow: none !important;

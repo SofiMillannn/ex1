@@ -7,7 +7,7 @@ import {
   IonButtons,
   IonContent,
   IonHeader,
-  IonIcon, IonItem, IonList, IonMenu,
+  IonIcon, IonItem, IonList, IonMenu, IonMenuButton, IonMenuToggle,
   IonTitle,
   IonToolbar
 } from '@ionic/angular/standalone';
@@ -19,7 +19,7 @@ import {MenuController} from "@ionic/angular";
   templateUrl: './extra.page.html',
   styleUrls: ['./extra.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonIcon, IonButtons, IonButton, IonApp, IonMenu, IonList, IonItem]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonIcon, IonButtons, IonButton, IonApp, IonMenu, IonList, IonItem, IonMenuButton, IonMenuToggle]
 })
 export class ExtraPage implements OnInit {
   constructor(private router: Router,  private menu: MenuController) { }
@@ -29,14 +29,18 @@ export class ExtraPage implements OnInit {
   }
 
   onBackClick() {
-    console.log('Navegando a la página anterior');
+
     this.router.navigate(['/home']);
   }
-  onHelpClick() {
-    this.menu.open('helpM');
-  }
-
-  closeMenu(){
+  onCloseMenuClick(){
     this.menu.close();
   }
+  // onHelpClick() {
+  //   console.log('Here');
+  //   this.menu.open('helpM');
+  // }
+
+  // closeMenu(){
+  //   this.menu.close();
+  // }
 }

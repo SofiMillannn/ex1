@@ -1,28 +1,37 @@
 <ion-app>
-<ion-header id="head" [translucent]="false">
-  <ion-toolbar>
-    <ion-icon name="bulb" slot="start" class="bulb" style="font-size: 24px; color: gold;"></ion-icon>
-    <ion-icon name="checkmark-done" class="check" slot="end"></ion-icon>
-    <ion-title>Ejercicio 01</ion-title>
-  </ion-toolbar>
-</ion-header>
+  <ion-header id="head" [translucent]="false">
+    <ion-toolbar>
+      <ion-icon name="bulb" slot="start" class="bulb" style="font-size: 24px; color: gold;"></ion-icon>
+      <ion-icon name="checkmark-done" class="check" slot="end"></ion-icon>
+      <ion-title>Ejercicio 01</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-<ion-content id="fondo" [fullscreen]="false">
-  <h1>EXTRA</h1>
-  <ion-buttons id="buttons">
-    <ion-button id="back" (click)="onBackClick()">BACK</ion-button>
-    <ion-button id="help" (click)="onHelpClick()">HELP</ion-button>
-  </ion-buttons>
-  <ion-menu side="end" menuId="helpM" contentId="main-content">
-    <ion-header>
+  <ion-content id="fondo" [fullscreen]="false">
+    <h1>EXTRA</h1>
+    <ion-buttons id="buttons">
+      <ion-button id="back" (click)="onBackClick()">BACK</ion-button>
+      <ion-menu-toggle>
+        <ion-button id="help">HELP</ion-button>
+      </ion-menu-toggle>
+    </ion-buttons>
+  </ion-content>
+
+  <ion-menu side="end" menuId="helpM" contentId="fondo">
+    <ion-header id="head2">
       <ion-toolbar>
         <ion-title>HELP</ion-title>
         <ion-buttons slot="end">
-          <ion-button id="closeMenu" (click)="closeMenu()">CLOSE</ion-button>
+
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
+    <ion-content>
+      <ion-menu-toggle>
+        <ion-button id="closeMenu" (click)="onCloseMenuClick()">CLOSE</ion-button>
+    </ion-menu-toggle>
+
+    </ion-content>
   </ion-menu>
-</ion-content>
 
 </ion-app>
