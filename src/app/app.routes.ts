@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
+import {NgModule} from "@angular/core";
 
 export const routes: Routes = [
   {
@@ -10,4 +11,17 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'inicio',
+    loadComponent: () => import('./pages/inicio/inicio.page').then( m => m.InicioPage)
+  },
+  {
+    path: 'extra',
+    loadComponent: () => import('./pages/extra/extra.page').then(m => m.ExtraPage)
+  },
 ];
+@NgModule({
+  imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

@@ -1,4 +1,51 @@
-
+#back{
+  background-color: #a02dff;
+  border-radius: 30px;
+  border-color: #a02dff;
+  border-style: solid;
+  color: white;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+#help:hover{
+  background-color: #ffa8e9;
+}
+#back:hover{
+  background-color: #9171ff;
+}
+ion-buttons:active {
+  --background: transparent;
+  --color: #000000;
+  opacity: 0.8;
+  border-radius: 30px;
+  font-size: 20px;
+}
+#buttons{
+  --highlight-color: transparent;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  transition: background 0.3s;
+}
+#help{
+  background-color: #ffcbf0;
+  border-color: #ff2da4;
+  border-style: solid;
+  border-radius: 30px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: #ff2da4;
+  margin-left: 100px;
+}
 html, body {
   height: 100%;
   background-color: #ffd6f5;

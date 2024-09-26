@@ -1,0 +1,28 @@
+<ion-app>
+<ion-header id="head" [translucent]="false">
+  <ion-toolbar>
+    <ion-icon name="bulb" slot="start" class="bulb" style="font-size: 24px; color: gold;"></ion-icon>
+    <ion-icon name="checkmark-done" class="check" slot="end"></ion-icon>
+    <ion-title>Ejercicio 01</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="fondo" [fullscreen]="false">
+  <h1>EXTRA</h1>
+  <ion-buttons id="buttons">
+    <ion-button id="back" (click)="onBackClick()">BACK</ion-button>
+    <ion-button id="help" (click)="onHelpClick()">HELP</ion-button>
+  </ion-buttons>
+  <ion-menu side="end" menuId="helpM" contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>HELP</ion-title>
+        <ion-buttons slot="end">
+          <ion-button id="closeMenu" (click)="closeMenu()">CLOSE</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+  </ion-menu>
+</ion-content>
+
+</ion-app>
