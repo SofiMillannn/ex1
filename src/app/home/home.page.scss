@@ -1,0 +1,110 @@
+
+html, body {
+  height: 100%;
+  background-color: #ffd6f5;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ion-header {
+  background-color: #ffd6f5;
+  --ion-box-shadow: none;
+  --border-width: 0;
+}
+
+ion-header, ion-toolbar {
+  --ion-box-shadow: none !important;
+  --box-shadow: none !important;
+  box-shadow: none !important;
+
+  --border-width: 0 !important;
+  --border-color: transparent !important;
+  border: none !important;
+
+  --background: #ffd6f5 !important;
+}
+
+
+ion-content {
+  --box-shadow: none !important;
+}
+
+ion-toolbar {
+  --background: #ffd6f5;
+  box-shadow: none !important;
+  --ion-box-shadow: none !important;
+
+}
+
+
+ion-title {
+  text-align: center;
+  color: #a02dff;
+  font-weight: bold;
+  font-family: "Droid Sans", serif;
+}
+ion-title:hover {
+  text-align: center;
+  color: #d11d9e;
+  font-weight: bold;
+  font-family: "Droid Sans", serif;
+}
+.bulb{
+  font-size: 50px;
+  color: #ffda23;
+  margin-left: 20px;
+}
+
+ion-icon {
+  cursor: pointer;
+}
+.heart{
+  background-color: #bb96ff;
+  border-radius: 50%;
+  font-size: 30px;
+  border-width: 10px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+.heart:hover{
+  background-color: #a8fbff;
+  font-size: 35px;
+}
+.check{
+  font-size: 30px;
+  color: #d11d9e;
+  margin-right: 20px;
+
+
+}
+.check:hover{
+  color: #49ff00;
+}
+#fondo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+ion-content {
+  --background: #ffdcfa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  color: black;
+  font-family: "Courier New", serif;
+  margin-bottom: 16px;
+}
+
+p {
+  color: black;
+  font-size: 16px;
+}
